@@ -1,0 +1,16 @@
+object frmVendas: TfrmVendas
+  Left = 0
+  Top = 0
+  Border.Styling = False
+  BorderIcons = [biSystemMenu]
+  BorderStyle = SizeToolWin
+  Caption = 'Vendas'
+  ClientHeight = 694
+  ClientWidth = 598
+  Position = DesktopCenter
+  FormStyle = StayOnTop
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+end

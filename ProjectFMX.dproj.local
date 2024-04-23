@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/04/20 12:18:51.000.470,=D:\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/20 12:19:09.000.369,=D:\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/20 12:19:28.000.125,D:\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\untPrincipal.fmx</Transaction>
+    <Transaction>2024/04/20 12:19:28.000.125,D:\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\untPrincipal.pas</Transaction>
+    <Transaction>2024/04/20 12:19:36.000.384,D:\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\ProjectFMX.dproj</Transaction>
+    <Transaction>2024/04/22 10:22:30.000.775,=C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\Unit1.pas</Transaction>
+    <Transaction>2024/04/22 10:23:20.000.590,C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\Unit1.fmx=C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\View\untVendas.fmx</Transaction>
+    <Transaction>2024/04/22 10:23:20.000.590,C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\Unit1.pas=C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\View\untVendas.pas</Transaction>
+    <Transaction>2024/04/23 09:27:35.452,C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\View\PedidoDeVenda.pas=C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\View\untVendas.pas</Transaction>
+    <Transaction>2024/04/23 09:27:35.452,C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\View\PedidoDeVenda.fmx=C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\View\untVendas.fmx</Transaction>
+    <Transaction>2024/04/23 09:28:14.106,C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\View\uPedidosVenda.pas=C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\View\PedidoDeVenda.pas</Transaction>
+    <Transaction>2024/04/23 09:28:14.106,C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\View\uPedidosVenda.fmx=C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\View\PedidoDeVenda.fmx</Transaction>
+    <Transaction>2024/04/23 12:50:19.491,=C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\controller\uCabecalhoPedidoController.pas</Transaction>
+    <Transaction>2024/04/23 12:50:19.496,=C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\controller\uClienteController.pas</Transaction>
+    <Transaction>2024/04/23 12:50:19.502,=C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\controller\uItensPedidoController.pas</Transaction>
+    <Transaction>2024/04/23 12:50:19.507,=C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\controller\uProdutosController.pas</Transaction>
+    <Transaction>2024/04/23 12:50:27.912,=C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\model\uCabecalhoPedido.pas</Transaction>
+    <Transaction>2024/04/23 12:50:27.918,=C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\model\uCliente.pas</Transaction>
+    <Transaction>2024/04/23 12:50:27.924,=C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\model\uConexao.pas</Transaction>
+    <Transaction>2024/04/23 12:50:27.930,=C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\model\uItensPedido.pas</Transaction>
+    <Transaction>2024/04/23 12:50:27.937,=C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\model\uProdutos.pas</Transaction>
+    <Transaction>2024/04/23 12:50:36.493,=C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\dao\uCabecalhoPedidoDao.pas</Transaction>
+    <Transaction>2024/04/23 12:50:36.499,=C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\dao\uClienteDao.pas</Transaction>
+    <Transaction>2024/04/23 12:50:36.506,=C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\dao\uItensPedidoDao.pas</Transaction>
+    <Transaction>2024/04/23 12:50:36.513,=C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\dao\uProdutosDao.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

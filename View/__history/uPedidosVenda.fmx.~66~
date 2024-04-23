@@ -1,0 +1,671 @@
+object frmPedidosVenda: TfrmPedidosVenda
+  Left = 0
+  Top = 0
+  Border.Styling = False
+  BorderIcons = [biSystemMenu]
+  BorderStyle = None
+  Caption = 'Vendas'
+  ClientHeight = 694
+  ClientWidth = 598
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  DesignerMasterStyle = 0
+  object pnlFundo: TPanel
+    Align = Client
+    Size.Width = 598.000000000000000000
+    Size.Height = 694.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object pnlTopo: TPanel
+      Align = Top
+      Size.Width = 598.000000000000000000
+      Size.Height = 201.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object edtNumPedido: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        StyleLookup = 'transparentedit'
+        TabOrder = 2
+        Position.X = 48.000000000000000000
+        Position.Y = 80.000000000000000000
+        OnKeyDown = FormKeyDown
+        OnKeyUp = edtNumPedidoKeyUp
+        OnEnter = edtNumPedidoEnter
+        OnExit = edtNumPedidoExit
+      end
+      object edtCodCliente: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        StyleLookup = 'transparentedit'
+        TabOrder = 1
+        Position.X = 48.000000000000000000
+        Position.Y = 144.000000000000000000
+        OnKeyDown = FormKeyDown
+        OnKeyUp = edtCodClienteKeyUp
+        OnEnter = edtCodClienteEnter
+        OnExit = edtCodClienteExit
+      end
+      object edtNomeCliente: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        StyleLookup = 'transparentedit'
+        TabOrder = 0
+        Position.X = 152.000000000000000000
+        Position.Y = 144.000000000000000000
+        Enabled = False
+        Size.Width = 385.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        OnKeyDown = FormKeyDown
+      end
+      object lblNumPedido: TLabel
+        StyledSettings = [Style, FontColor]
+        Position.X = 48.000000000000000000
+        Position.Y = 61.000000000000000000
+        TextSettings.Font.Family = 'Ebrima'
+        TextSettings.Font.Size = 14.000000000000000000
+        Text = 'Pedido'
+        TabOrder = 4
+      end
+      object lblCodCliente: TLabel
+        StyledSettings = [Style, FontColor]
+        Position.X = 48.000000000000000000
+        Position.Y = 125.000000000000000000
+        TextSettings.Font.Family = 'Ebrima'
+        TextSettings.Font.Size = 14.000000000000000000
+        Text = 'Cliente'
+        TabOrder = 3
+      end
+      object lneEdtNumPedido: TLine
+        LineType = Diagonal
+        Opacity = 0.500000000000000000
+        Position.X = 47.000000000000000000
+        Position.Y = 103.000000000000000000
+        Size.Width = 102.000000000000000000
+        Size.Height = 1.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF84ACB3
+      end
+      object lneEdtCliente: TLine
+        LineType = Diagonal
+        Opacity = 0.500000000000000000
+        Position.X = 47.000000000000000000
+        Position.Y = 167.000000000000000000
+        Size.Width = 102.000000000000000000
+        Size.Height = 1.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF84ACB3
+      end
+      object lneEdtNomeCliente: TLine
+        LineType = Diagonal
+        Opacity = 0.500000000000000000
+        Position.X = 153.000000000000000000
+        Position.Y = 167.000000000000000000
+        Size.Width = 361.000000000000000000
+        Size.Height = 1.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF84ACB3
+      end
+      object pnlLogo: TPanel
+        Align = Top
+        Size.Width = 598.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 8
+        object imgLogo: TImage
+          MultiResBitmap.Height = 62
+          MultiResBitmap.Width = 49
+          MultiResBitmap = <
+            item
+              Width = 49
+              Height = 62
+              PNG = {
+                89504E470D0A1A0A0000000D49484452000000310000003E080600000082CAF3
+                C9000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                0C79494441546843ED5A797055D5193FDB7D6BC80E428879402204085B03A8B1
+                2A71834AD5524B3BE3542D7684E9388EE3369D69EB24F9C3193BB5763A151D50
+                D13A0EA34E679011A9824A14016158044CD812C8832C66792FFB7BEF2EE79C7E
+                E7BE0B64792F095BEA1FF90179F77DE7DE73BFDFF996F37D27A0318C610C63F8
+                51023B9F570F5262091F17262E2FBFF88EF272350483F62D570D574C4282D2E5
+                9595148D5F427258632A76D30281B4692D1133F2665DDBF8162E17C14BA48664
+                07C3FC9C0FE1536E8D565BEE94D620AAB35065A5401515C299EEB270D9243E94
+                92B654B578DD5E39CD64F45E2EF0CF30A2F339C6A96A1C2371EABB50CFEE0F9A
+                BA0B2288DC04221A7F9D445448836179DC85D1763F169B5C8655154CEFE841A5
+                4B38DC73C956BA64124AF9F6138D1958D36E32085D2310BE5362EC8DABD71F44
+                F2EFF7B4F5ECDBDC12298A485C0CE371224A4FE7662284E546728F17CB3709A3
+                DBDB3C335B5129B6E2A323C3884994954952F0642825DA43179A883F6B497C0F
+                C2940D56BD3FB09407BE6EEA3CF84928B22886F03C20DCFF9D40084B8CB010CA
+                E576A720F1B2DB8AEE6C3CBCB81D55E011B9D9884894EDD8C1264D9E15102EB6
+                CA42F809786DBA33343CA4B44C4BFC677D5D1BAA8D89FBC0DDFCCE4802804322
+                1EF549B1C125E5AB539A8CDA036B60CD86C1B024FE79F2A49BB271F311D65EE0
+                882C87CCE28C8C089625F889CAE6AE63DBDAA2B3754C663AF2A4009BD89F5E69
+                EDF232F997144FCAB7C1D2A9315B9804436AF4F619E98989E65B2DA2FD4D6032
+                CF118F0890B5B82544F0DBB6EEAAAD6DB1A951898A8676BC8B882B859126458D
+                0F8967DDEDD617CD8FCCEFB5C509409CCF415016D049E8368BB0B5974400B487
+                1F267CD61DEF8AEEFBBC2D9A1213723242A21BE2C3807FC372513748F8636252
+                000961AD9E86EFCAFD60B7373E3A18092D512625BBBE21BC286AE1F5907D8A1C
+                7152805E109A084C8EDB6155C210A9F59198B16DE3998E86B3260F8053BB0591
+                5942CAA916A27910ADD9F0582628EB1B14E803A00635216AC711F17868A2FE0D
+                5A383846064D0004C8C4DAD67C4EE85A4EC8DD8E3809D4A2A328CC728E0A7490
+                21F1A946AD9DD3F2AE3B5B8A13A449E05AF8E9B189219397F460B4DC40743110
+                9AA2C840AC2521138F128FE4BBBC583C1E5E5E7402EEED97B5063DF8F699F6F4
+                08E27FE2883EAF963729C0E761B80536B59D2E84DF49A7BD95BFC9CB8B3AA3C3
+                A278FF7E2DD8E82AE945749581F11DA0D524B00AA4EC44C0E0F712F991F56A1A
+                C365F5CB8AC2CE808D7E6A96ED902C373F7C578CE30F05C6E31C712228DF3E45
+                317FD763986FFF7E7A4EAB23BF6404361D4A6F27DAC3114256C1763D0B88B89D
+                A17E50F6A0D28AA611F150C837674BDF0DB16F60E3DCBCE62C83A3E7862340A4
+                3C0A25C34BAC2DF88F2B21A0105CB1A063A95EFD9A5F1A2F32240FC0E2E8CE50
+                3FA840B730F54604793EABF3E004905C30C0850BB5A1E54C9BBB22C6D1FB8890
+                84594B4AC109C2C7A8E07F6D9996BDB162806F5E2170E696A32BBA10F9339778
+                6E32D722901D5229FF5D87AF6D232A2DB5AD7141D98239737C86C06B10C189D3
+                AECA401237C324EFCC9A96FDFE5526A0209F5C5EF4914FC80D14A3C664A95812
+                8C754156073AD2531C519C84D22F166185A0D5AD03C2E422308E401BB0639C1E
+                7D2761E6B90A500B93ED8DBDA749FE056891707353CC0C846F8CB8D86C28E86C
+                FDED1FE5958872217F018ABAD4F741B0F70171D6C3C4864767E5861CE935C1E9
+                BB1776A64BBC81605997CC1A0211A64BB4022D597291C4942975CC427299BA4E
+                0498294AA4D8979E9BFD8D23BAA6C8698AEDD504DF0B9791B86400A0F23525B9
+                27B7C5ADA9AF360943B826802BCD52D78900E92D4431DEF26B8C0D47744DA12A
+                571F911FC3F697D4EAB06D178EF3A741965224C05318D16643790DF979703C80
+                45C195646B0AF2EC7244A382C99ADC031D602BBC7B5002513EC631D1C2881729
+                FD8912981CCDB047D5B0ED8650C03920181954F2E06F03FE1F1CD1A8E0C8D2F9
+                2DD0C2D6405C24B47E5C6F7983BA26E5E5E5585006552600360269F1934DDF07
+                2BB1E0754A04CBA0436AAD85D2463D37AAF09BFA36D8006BE1CDFDB2A1F21726
+                65BD2716ED52DF092A2F4702A3544540E8E6B1CA759F556FF8C31BC6DE0F761E
+                9796550BF79898E22BDA952F175A7563BBAFA56B2F13E22458C452CADB049038
+                E36DE9D86F1D0FD9D9D40E6CCE05E631E3C8E7FFDA5AF3DFB5DB0AC33F742FFD
+                F8EF9F04BEDEF0659D8C1927C0EB4625A0072212C5F9666D7BAEAF3E7CC42DC4
+                612060BAA538E16DEE3C689CEEC8E9898AF9EA5C8B94AB00E88C1DDAF2D2A6B3
+                DBDFFAB2C83251A18AF5DE4EFD86EDAF6FCFDFFAF2472D5D0D6D8DCEBCA30A58
+                5B1714A30B63F55D33DD6743553ECBDAE4AEEFF84E3FDD31D5B0D0422881E265
+                87AAE2DF7F7A7DCFCE8DBBE6730BE7DB4F2B009148B771FDCE8D7B8ADE58BDEE
+                3A473AAA105264436AD40C49E6451B7A7F82AB9A70EFB9AE9906B74F4D4077D9
+                A1EE0377C2E8E4A1D329B00BE62548B1D432C5F50D35CDA58A95231B1D803B70
+                44A6411A72AB8C02FE5CD4DB6DDE6B713907BE53750B95B2511D8DDA31C118AA
+                89A7D6C100B1CB12784A5EDEEA898E685430A37CF324F0953CD0CADE95D502C3
+                42FBCF7780EA874B43AACBB3035BFA7CFE6A42541D9F8808DC25647667A751E2
+                0846053F18B404366070A7B8D27DA104548A580611C7E0326E098FC7D54608AE
+                4AE04E0E70A6AEA3E5C5C5AB9D55B9B6285EB75FD339590E4B9AE9880601CAF5
+                2A9EE9B2CB129B444DCD11CE28FA34B1256CA90F7CF1C69A1AFD1647744D515B
+                DF58029BC26278B1CF11F507842723FCB39AB0173A5A87044295DCEDC69BC170
+                C9F603286150201643ABF2F21ECA7064D70481B24DE9518BAC82163990C89514
+                A0E033DC1ADE8CCAD529FA0512AAA4E0C71995506A277629650DE839EE680DB1
+                47D0CA957676B8DA58B9F243DA6E90872D49EE8078486C0580860514A3F43884
+                ABED3A0E0984C2E1FA88D745D7437395ACED849D1F4D344DB9CAF399EB41F53D
+                2EBE6AC0DB0ABC2B22823D26249A04DA25B602F4D85E2CD68791F742AFD16745
+                833235ADB8D534AD454290298E7020C0923813C1B82F656EE703F7CF38515D5D
+                6DAFC61501DACCB4926780007D164A6C754890B0C354C7366085AF7D6EF472A4
+                6269B723EE4B029ADADE54DDEB4D6DE11C3F009A256E555576936802E768666D
+                8DE6CAC9997DB2B3F3E890A7D643A1A06C6BAA614E7C2C2AD95340601EBC7788
+                732711F16BE89930F11F415FFDFB82C70CF0EDA0F07AE7B441319202446E567B
+                74129FA160916CB0ECDC480C17A6F817B4E7E74F6F6C6DADB6036D24B8BD6C07
+                EBFAE983256153FE5197F411217141320B2828EFF711F3F5542DF25E57C5CFFB
+                1D2224D0B18C8C1B77BAC0B4E43AD3A44B92A5DD38A036C0AA0FC641C6E43EE6
+                629F64A4E2DDE7CEBDD5147FED6014BCB8757C47AF58DC23C87DD079958055A7
+                C28DFE6499E83CDC887FE562D69A6E7AE8D4C05F542679B08CA5A7D7DC1C8D92
+                372C4EA0EB1B8A888D381929C388C8364AC859889E339420E8CD99AE657BCEF0
+                7B6FC93452D3971812E7C36CD781F25976068A570D49A114A4989F4C41627547
+                A869375ABF66F853F1F308041EF584C3D69DBA4ED6728903C3F3380F500F63F5
+                221D26B73437394C4BE735C666152C80DA07561DBB80F1908A9F87528E21EBAC
+                87912732A9EFF3604569C2D84B9AEF3B3B0F5B595937370821AB2CC18B61CAEC
+                2138F781ED166A5E3763F8345D34ABDE289A3E8F53ED06DBE787719BBE606001
+                2F224FA568FCCBFA8A65494FDC939250E8E939604E9A34EF9CC9C541E8B3A702
+                2148BD23D3815074DC559C7FC4BCB1A8C0D258211048726CDF1F2A0BA9D30B17
+                11DFF811793AC3EDDB39140185214928288B18B15F367ABDEDBB08D8560A3417
+                C219B288F2AFC48460238DBA2767EE9377DF447497FB562030E2C2914A1EF511
+                B9CE87C40BEDA186239DAFFC6AD8D6785812717C250C6345BBCF6BEEA5D4D807
+                821C81303451C9CC82998C1A9CFA589BCC19EF827BB39C81A420524A1796BBFC
+                9A7C2655D3DE6DA6FB1AD02BCF8D28658FD83F2FA28C4D98509F158B59A58629
+                D65896BC454A0A2B3D28F23973D12A565A1434E64C9F6B221670E436CEBF18CA
+                088B11F9AD978A37A9C1B7877C692DA8227E643F525C06091BF0DCED34236386
+                1F1251A1AE5BF75B1C2F8398992DC4C5DFF4A8D33BE661DFD13B1734EA85050B
+                2C8CEDF32D8A84C9A02BD630DAE6A162939F58478328BD0794572B3FE23C781E
+                974BA20FD4BEBE8406025318E79EAC48C4986918D6748949AEE422DDB2804786
+                FBA8E781DB747D7C66AA5B8ADA348D1D8EA6F636D5774D8054FC7FFC5F3643C0
+                99B3ACCFDC15B0BAF1BFF1D1C4BBF918C63086318CE1470684FE07B841A1C0E0
+                D04EF40000000049454E44AE426082}
+              FileName = 
+                'C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\Images\logo.' +
+                'png'
+            end>
+          Align = Left
+          Size.Width = 50.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object txtVendas: TText
+          Align = Client
+          Size.Width = 548.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Venda'
+          TextSettings.Font.Family = 'Modern No. 20'
+          TextSettings.Font.Size = 28.000000000000000000
+          TextSettings.FontColor = xFF1A8CBE
+        end
+      end
+    end
+    object pnlItens: TPanel
+      Align = Client
+      Size.Width = 598.000000000000000000
+      Size.Height = 431.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object pnlCampos: TPanel
+        Align = Top
+        Size.Width = 598.000000000000000000
+        Size.Height = 201.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lblProduto: TLabel
+          StyledSettings = [Style, FontColor]
+          Position.X = 48.000000000000000000
+          Position.Y = 21.000000000000000000
+          TextSettings.Font.Family = 'Ebrima'
+          TextSettings.Font.Size = 14.000000000000000000
+          Text = 'Produto'
+          TabOrder = 7
+        end
+        object edtCodProd: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          StyleLookup = 'transparentedit'
+          TabOrder = 3
+          Position.X = 48.000000000000000000
+          Position.Y = 40.000000000000000000
+          OnKeyDown = FormKeyDown
+          OnKeyUp = edtCodProdKeyUp
+          OnEnter = edtCodProdEnter
+          OnExit = edtCodProdExit
+        end
+        object lneEdtProduto: TLine
+          LineType = Diagonal
+          Opacity = 0.500000000000000000
+          Position.X = 47.000000000000000000
+          Position.Y = 63.000000000000000000
+          Size.Width = 102.000000000000000000
+          Size.Height = 1.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF84ACB3
+        end
+        object lneEdtDescricao: TLine
+          LineType = Diagonal
+          Opacity = 0.500000000000000000
+          Position.X = 153.000000000000000000
+          Position.Y = 63.000000000000000000
+          Size.Width = 361.000000000000000000
+          Size.Height = 1.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF84ACB3
+        end
+        object edtDescricao: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          StyleLookup = 'transparentedit'
+          TabOrder = 1
+          Position.X = 152.000000000000000000
+          Position.Y = 40.000000000000000000
+          Size.Width = 385.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          OnKeyDown = FormKeyDown
+        end
+        object lneEdtQuantidade: TLine
+          LineType = Diagonal
+          Opacity = 0.500000000000000000
+          Position.X = 48.000000000000000000
+          Position.Y = 134.000000000000000000
+          Size.Width = 102.000000000000000000
+          Size.Height = 1.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF84ACB3
+        end
+        object lneEdtVlrUnitario: TLine
+          LineType = Diagonal
+          Opacity = 0.500000000000000000
+          Position.X = 191.000000000000000000
+          Position.Y = 135.000000000000000000
+          Size.Width = 102.000000000000000000
+          Size.Height = 1.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF84ACB3
+        end
+        object lblProduto1: TLabel
+          StyledSettings = [Style, FontColor]
+          Position.X = 48.000000000000000000
+          Position.Y = 96.000000000000000000
+          TextSettings.Font.Family = 'Ebrima'
+          TextSettings.Font.Size = 14.000000000000000000
+          Text = 'Quantidade'
+          TabOrder = 5
+        end
+        object edtQuantidade: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          StyleLookup = 'transparentedit'
+          TabOrder = 2
+          Position.X = 48.000000000000000000
+          Position.Y = 115.000000000000000000
+          OnKeyDown = FormKeyDown
+          OnKeyUp = edtQuantidadeKeyUp
+        end
+        object lblVlrUnitario: TLabel
+          StyledSettings = [Style, FontColor]
+          Position.X = 192.000000000000000000
+          Position.Y = 96.000000000000000000
+          TextSettings.Font.Family = 'Ebrima'
+          TextSettings.Font.Size = 14.000000000000000000
+          Text = 'Vlr. Unit'#225'rio'
+          TabOrder = 4
+        end
+        object edtVlrUnitario: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          StyleLookup = 'transparentedit'
+          TabOrder = 0
+          Position.X = 192.000000000000000000
+          Position.Y = 115.000000000000000000
+          Size.Width = 100.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          OnKeyDown = FormKeyDown
+          OnKeyUp = edtVlrUnitarioKeyUp
+          OnExit = edtVlrUnitarioExit
+        end
+      end
+      object btnAdicionar: TSpeedButton
+        Cursor = crHandPoint
+        Position.X = 496.000000000000000000
+        Position.Y = 107.000000000000000000
+        Size.Width = 25.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = btnAdicionarClick
+        object imgInserir: TImage
+          MultiResBitmap.Height = 24
+          MultiResBitmap.Width = 24
+          MultiResBitmap = <
+            item
+              Width = 24
+              Height = 24
+              PNG = {
+                89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+                F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                011949444154484BED94D11182300C869B3A878A93A84F1EB8846E0013A813E0
+                083A84783E8193283A07C4A6E601A502C5F37CE17BA0698EEB5F929F888E3A80
+                578DB7BD2187465060A21E6729647208FA09A72BB11228A25EDCE5986D4EC1E8
+                CA292392576BD4CD163DE8C5B3F0E270CA486B01C651E55A706CE4A54475CCC3
+                FB24877C0502269C7A82B88C82E18E772F587D0135F6E80FA7BAD9051060CC61
+                8956259228371C32F8B10FAD04DE2D5A2A59816F9B5CCBCF051ABBC80DD33500
+                AC785B09FD84477FB0A4D8CAA6EE368DABEA4D90C3C869BCB51320D438B9A8E5
+                936BAE913F1871ACB1EE418619DDCE347F4A8713D60234DC4C2280A06BFE4E2B
+                17910822EE55A845D4E1D3A6E3DB0A729617A695C3AEE3DF08F100CD155B522C
+                8537920000000049454E44AE426082}
+              FileName = 
+                'C:\Users\Cliente Vip Infomac\Desktop\MyProjects\FMX\Images\arrow' +
+                '-down.png'
+            end>
+          Align = Client
+          Locked = True
+          HitTest = False
+          Size.Width = 25.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object dbgProdutos: TGrid
+        Align = Client
+        CanFocus = True
+        ClipChildren = True
+        Size.Width = 598.000000000000000000
+        Size.Height = 230.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'gridstyle'
+        TextSettings.Font.Family = 'Ebrima'
+        StyledSettings = [Size, Style, FontColor]
+        TabOrder = 3
+        RowCount = 0
+        Options = [Editing, ColumnResize, ColumnMove, Tabs, Header, HeaderClick, AutoDisplacement]
+        OnCellDblClick = dbgProdutosCellDblClick
+        Viewport.Width = 594.000000000000000000
+        Viewport.Height = 205.000000000000000000
+      end
+    end
+    object pnlBotoes: TPanel
+      Align = Bottom
+      Position.Y = 632.000000000000000000
+      Size.Width = 598.000000000000000000
+      Size.Height = 62.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object btnConsulta: TSpeedButton
+        Cursor = crHandPoint
+        Position.X = 294.000000000000000000
+        Position.Y = 24.000000000000000000
+        Text = 'Consultar'
+        OnClick = btnConsultaClick
+        object rctConsultar: TRectangle
+          Align = Client
+          Fill.Color = xFFCEE0EA
+          Locked = True
+          Size.Width = 80.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claNull
+          Stroke.Thickness = 0.000000000000000000
+        end
+        object txtConsultar: TText
+          Align = Client
+          Locked = True
+          Size.Width = 80.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Consultar'
+          TextSettings.Font.Family = 'Ebrima'
+          TextSettings.Font.Size = 13.000000000000000000
+          TextSettings.FontColor = xFF114550
+        end
+      end
+      object btnDeletar: TSpeedButton
+        Cursor = crHandPoint
+        Position.X = 211.000000000000000000
+        Position.Y = 24.000000000000000000
+        Text = 'Deletar'
+        OnClick = btnDeletarClick
+        object rctDeletar: TRectangle
+          Align = Client
+          Fill.Color = xFFCEE0EA
+          Locked = True
+          Size.Width = 80.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claNull
+          Stroke.Thickness = 0.000000000000000000
+        end
+        object txtDeletar: TText
+          Align = Client
+          Locked = True
+          Size.Width = 80.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Deletar'
+          TextSettings.Font.Family = 'Ebrima'
+          TextSettings.Font.Size = 13.000000000000000000
+          TextSettings.FontColor = xFF114550
+        end
+      end
+      object btnInserir: TSpeedButton
+        Cursor = crHandPoint
+        StyledSettings = [Family, Size, Style, FontColor, Other]
+        Position.X = 128.000000000000000000
+        Position.Y = 24.000000000000000000
+        Text = 'Inserir'
+        TextSettings.FontColor = claWhite
+        OnClick = btnInserirClick
+        object rctInserir: TRectangle
+          Align = Client
+          Fill.Color = xFFCEE0EA
+          Locked = True
+          Size.Width = 80.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claNull
+          Stroke.Thickness = 0.000000000000000000
+        end
+        object txtInserir: TText
+          Align = Client
+          Locked = True
+          HitTest = False
+          Size.Width = 80.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Inserir'
+          TextSettings.Font.Family = 'Ebrima'
+          TextSettings.Font.Size = 13.000000000000000000
+          TextSettings.FontColor = xFF114550
+        end
+      end
+      object btnCancelar: TSpeedButton
+        Cursor = crHandPoint
+        Position.X = 377.000000000000000000
+        Position.Y = 24.000000000000000000
+        Text = 'Cancelar'
+        OnClick = btnCancelarClick
+        object rctCancelar: TRectangle
+          Align = Client
+          Fill.Color = xFFCEE0EA
+          Locked = True
+          Size.Width = 80.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claNull
+          Stroke.Thickness = 0.000000000000000000
+        end
+        object txtCancelar: TText
+          Align = Client
+          Locked = True
+          Size.Width = 80.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Cancelar'
+          TextSettings.Font.Family = 'Ebrima'
+          TextSettings.Font.Size = 13.000000000000000000
+          TextSettings.FontColor = xFF114550
+        end
+      end
+      object btnGravar: TSpeedButton
+        Cursor = crHandPoint
+        Position.X = 504.000000000000000000
+        Position.Y = 24.000000000000000000
+        Text = 'Gravar'
+        OnClick = btnGravarClick
+        object rctGravar: TRectangle
+          Align = Client
+          Fill.Color = xFFCEE0EA
+          Locked = True
+          Size.Width = 80.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claNull
+          Stroke.Thickness = 0.000000000000000000
+        end
+        object txtInserir1: TText
+          Align = Client
+          Locked = True
+          Size.Width = 80.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Gravar'
+          TextSettings.Font.Family = 'Ebrima'
+          TextSettings.Font.Size = 13.000000000000000000
+          TextSettings.FontColor = xFF114550
+        end
+      end
+      object lblTotalPedido: TLabel
+        StyledSettings = [Style]
+        Position.X = 34.000000000000000000
+        Position.Y = 27.000000000000000000
+        Size.Width = 81.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Ebrima'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = xFFE54141
+        Text = 'R$ 0.00'
+        TabOrder = 5
+      end
+    end
+  end
+  object dsProdutos: TDataSource
+    DataSet = cdsProdutos
+    Left = 472
+    Top = 353
+  end
+  object cdsProdutos: TClientDataSet
+    PersistDataPacket.Data = {
+      800000009619E0BD010000001800000005000000000003000000800007436F64
+      50726F6404000100000000000944657363726963616F01004900000001000557
+      49445448020002001E000A5175616E74696461646504000100000000000B566C
+      72556E69746172696F080004000000000008566C72546F74616C080004000000
+      00000000}
+    Active = True
+    Aggregates = <>
+    Params = <>
+    Left = 544
+    Top = 353
+    object cdsProdutosCodProd: TIntegerField
+      FieldName = 'CodProd'
+    end
+    object cdsProdutosDescricao: TStringField
+      FieldName = 'Descricao'
+      Size = 30
+    end
+    object cdsProdutosQuantidade: TIntegerField
+      FieldName = 'Quantidade'
+    end
+    object cdsProdutosVlrUnitario: TFloatField
+      FieldName = 'VlrUnitario'
+    end
+    object cdsProdutosVlrTotal: TFloatField
+      FieldName = 'VlrTotal'
+    end
+  end
+  object bndsrcdb: TBindSourceDB
+    DataSet = cdsProdutos
+    ScopeMappings = <>
+    Left = 16
+    Top = 354
+  end
+  object bndngslst: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 76
+    Top = 354
+    object lnkgrdtdtsrcBindSourceDB: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = bndsrcdb
+      GridControl = dbgProdutos
+      Columns = <
+        item
+          MemberName = 'CodProd'
+          Header = 'C'#243'digo'
+        end
+        item
+          MemberName = 'Descricao'
+          Header = 'Descri'#231#227'o'
+          Width = 200
+        end
+        item
+          MemberName = 'Quantidade'
+          Width = 80
+        end
+        item
+          MemberName = 'VlrUnitario'
+          Header = 'Vlr. Unit'#225'rio'
+          Width = 80
+        end
+        item
+          MemberName = 'VlrTotal'
+          Header = 'Vlr. Total'
+          Width = 80
+        end>
+    end
+  end
+end
